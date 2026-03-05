@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EugeneAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ac63b6711cc9741921f3277d9edf7996ff9d8c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("EugeneAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EugeneAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
