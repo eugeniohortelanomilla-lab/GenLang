@@ -1,0 +1,62 @@
+@page "/about"
+
+<div class="about-container">
+    <h1 class="display-text">THE <span class="outline">VISION</span></h1>
+    
+    <div class="glass-card main-bio">
+        <p>
+            I am a Digital Entrepreneur and IT Undergraduate with a background in 
+            Journalism and Multimedia Production. From managing social communities 
+            to architecting IT infrastructure, I blend creative storytelling with technical logic.
+        </p>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <span class="year">Current</span>
+            <h4>Assistant IT Analyst</h4>
+            <p>Optimizing systems and providing high-level technical support.</p>
+        </div>
+
+        <div class="timeline-item">
+            <span class="year">Experience</span>
+            <h4>Virtual Assistant & SMM</h4>
+            <p>Managed digital operations and social growth for diverse brands.</p>
+        </div>
+
+        <div class="timeline-item">
+            <span class="year">Creative</span>
+            <h4>Editor & Journalist</h4>
+            <p>Produced high-quality video, photo content, and editorial pieces.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .about-container { animation: fadeIn 1s ease-out; }
+    .display-text { font-size: 4rem; font-weight: 900; margin-bottom: 30px; }
+    .outline { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.4); }
+    
+    .glass-card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 40px;
+        border-radius: 24px;
+        margin-bottom: 40px;
+        backdrop-filter: blur(10px);
+    }
+    .main-bio p { font-size: 1.2rem; line-height: 1.8; color: #ccc; margin: 0; }
+
+    .timeline { display: grid; gap: 20px; }
+    .timeline-item {
+        background: rgba(128, 0, 32, 0.05);
+        border-left: 3px solid #800020;
+        padding: 20px 30px;
+        border-radius: 0 15px 15px 0;
+        transition: 0.3s;
+    }
+    .timeline-item:hover { background: rgba(128, 0, 32, 0.1); transform: translateX(10px); }
+    .year { color: #ff3c3c; font-weight: 900; font-size: 0.8rem; letter-spacing: 2px; }
+    .timeline-item h4 { margin: 5px 0; color: #fff; }
+    .timeline-item p { margin: 0; color: #888; font-size: 0.95rem; }
+</style>

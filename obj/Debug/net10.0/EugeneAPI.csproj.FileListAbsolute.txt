@@ -1,5 +1,11 @@
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\web.config
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\appsettings.json
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\appsettings.Development.json
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\appsettings.json
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\EugeneAPI.deps.json
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\EugeneAPI.runtimeconfig.json
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\EugeneAPI.staticwebassets.endpoints.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\EugeneAPI.staticwebassets.runtime.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\EugeneAPI.staticwebassets.endpoints.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\EugeneAPI.exe
@@ -15,6 +21,7 @@ C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAP
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.AssemblyInfo.cs
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.csproj.CoreCompileInputs.cache
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.sourcelink.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -23,6 +30,7 @@ C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\scopedcs
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\scopedcss\bundle\EugeneAPI.styles.css
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\scopedcss\projectbundle\EugeneAPI.bundle.scp.css
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\6zdv7xjlo5-{0}-sb2eq714ro-sb2eq714ro.gz
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\saiy4jf1pk-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\xlio1rr7i4-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\74njkq0qoi-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -70,6 +78,8 @@ C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compress
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\dqegh2sdeo-{0}-abdmv1u4y3-abdmv1u4y3.gz
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\a5bzkjmurc-{0}-ax6tuj8tun-ax6tuj8tun.gz
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\21l1ktmgy3-{0}-zr4b1gdhaw-zr4b1gdhaw.gz
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\iemlkxg9sf-{0}-0o8jt82xta-0o8jt82xta.gz
+C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\4hfwwte9k8-{0}-0o8jt82xta-0o8jt82xta.gz
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\staticwebassets.development.json
@@ -80,7 +90,3 @@ C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\refint\E
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.pdb
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.genruntimeconfig.cache
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\ref\EugeneAPI.dll
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\EugeneAPI.sourcelink.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\6zdv7xjlo5-{0}-0qg11ps84z-0qg11ps84z.gz
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\iemlkxg9sf-{0}-pjm7o16cld-pjm7o16cld.gz
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\obj\Debug\net10.0\compressed\4hfwwte9k8-{0}-pjm7o16cld-pjm7o16cld.gz

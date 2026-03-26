@@ -1,0 +1,186 @@
+@rendermode InteractiveServer
+
+@page "/projects"
+
+<div class="skills-container @(selectedSkill != null ? "blur-bg" : "")">
+    <h1 class="display-text">TECH <span class="outline">& CREATIVE</span></h1>
+
+    <div class="skills-grid">
+        @foreach (var skill in SkillList)
+        {
+            <div class="skill-card" @onclick="() => OpenSkill(skill)">
+                <div class="icon">@skill.Icon</div>
+                <h3>@skill.Title</h3>
+                <p>@skill.ShortDesc</p>
+                <div class="bar"><div class="progress" style="width: @skill.Progress%"></div></div>
+                <span class="click-hint">Click for Details</span>
+            </div>
+        }
+    </div>
+
+    <div class="experience-glass">
+        <h3>Expertise Highlights</h3>
+        <div class="tag-cloud">
+            <span>Video Production</span>
+            <span>Technical Analysis</span>
+            <span>Social Strategy</span>
+            <span>Virtual Assistance</span>
+            <span>UI/UX Design</span>
+            <span>Journalism</span>
+        </div>
+    </div>
+</div>
+
+@if (selectedSkill != null)
+{
+    <div class="modal-overlay" @onclick="CloseSkill">
+        <div class="modal-content" @onclick:stopPropagation="true">
+            <button class="close-btn" @onclick="CloseSkill">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">@selectedSkill.Icon</span>
+                <h2>@selectedSkill.Title</h2>
+            </div>
+            <hr class="modal-divider" />
+            <div class="modal-body">
+                <h4>Professional Experience</h4>
+                <ul>
+                    @foreach (var point in selectedSkill.Details)
+                    {
+                        <li>@point</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    // Adding '?' makes this nullable, fixing warning CS8618
+    private SkillItem? selectedSkill;
+
+    private void OpenSkill(SkillItem skill)
+    {
+        selectedSkill = skill;
+        StateHasChanged();
+    }
+
+    private void CloseSkill()
+    {
+        // This is now allowed because of the '?' above, fixing CS8625
+        selectedSkill = null;
+        StateHasChanged();
+    }
+
+    public class SkillItem
+    {
+        // Initializing with "" (empty string) fixes CS8618
+        public string Title { get; set; } = "";
+        public string Icon { get; set; } = "";
+        public string ShortDesc { get; set; } = "";
+        public string Progress { get; set; } = "";
+        public List<string> Details { get; set; } = new();
+    }
+
+    private List<SkillItem> SkillList = new List<SkillItem>
+    {
+        new SkillItem { 
+            Title = "IT Analysis & Dev", Icon = "💻", Progress = "80", 
+            ShortDesc = "Assistant IT Analyst experience in systems and development.",
+            Details = new List<string> {
+                "Assistant IT Analyst: System troubleshooting and data infrastructure.",
+                "Programming: Proficiency in Java, C, and Blazor Framework.",
+                "Development: Building interactive UI components for 'Project MILLA'."
+            }
+        },
+        new SkillItem { 
+            Title = "Multimedia Editing", Icon = "🎬", Progress = "90", 
+            ShortDesc = "Advanced Photo and Video editing for social growth.",
+            Details = new List<string> {
+                "Video Editing: High-retention cuts for social media platforms.",
+                "Photo Retouching: 4K enhancement and precise artifact removal.",
+                "Graphic Design: Creating 'Bold Ideas' visual assets for brands."
+            }
+        },
+        new SkillItem { 
+            Title = "SMM & VA", Icon = "📈", Progress = "95", 
+            ShortDesc = "Expert management and virtual brand assistance.",
+            Details = new List<string> {
+                "Social Media Manager: Content scheduling and community growth.",
+                "Virtual Assistant: Streamlining digital operations and admin tasks.",
+                "Journalism: Professional editorial writing and communication."
+            }
+        }
+    };
+}
+
+<style>
+    .display-text { font-size: 3.5rem; font-weight: 900; margin-bottom: 40px; color: white; }
+    .outline { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.4); }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .skill-card {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 30px;
+        border-radius: 20px;
+        transition: 0.4s;
+        cursor: pointer;
+        position: relative;
+    }
+    .skill-card:hover { border-color: #ff3c3c; transform: translateY(-5px); background: rgba(128, 0, 32, 0.08); }
+    
+    .click-hint { font-size: 0.6rem; color: #ff3c3c; font-weight: 800; letter-spacing: 1px; display: block; margin-top: 15px; opacity: 0; transition: 0.3s; }
+    .skill-card:hover .click-hint { opacity: 1; }
+
+    .bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px; margin-top: 10px; overflow: hidden;}
+    .progress { height: 100%; background: linear-gradient(90deg, #800020, #ff3c3c); box-shadow: 0 0 15px #ff3c3c; }
+
+    /* MODAL STYLING */
+    .modal-overlay {
+        position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+        display: flex; align-items: center; justify-content: center; z-index: 1000;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .modal-content {
+        background: #1a0505;
+        border: 1px solid rgba(255,60,60,0.3);
+        padding: 40px;
+        border-radius: 24px;
+        max-width: 500px;
+        width: 90%;
+        position: relative;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .close-btn { position: absolute; top: 20px; right: 20px; background: none; border: none; color: #888; font-size: 1.5rem; cursor: pointer; }
+    .modal-header { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+    .modal-icon { font-size: 3rem; }
+    .modal-header h2 { color: white; margin: 0; font-weight: 900; }
+    .modal-divider { border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0; }
+    
+    .modal-body h4 { color: #ff3c3c; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+    .modal-body ul { padding-left: 20px; color: #ccc; line-height: 1.8; }
+    .modal-body li { margin-bottom: 10px; }
+
+    .experience-glass {
+        background: rgba(255,255,255,0.03);
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .tag-cloud span {
+        background: rgba(255, 255, 255, 0.05);
+        color: #ff3c3c;
+        padding: 8px 15px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border: 1px solid rgba(255, 60, 60, 0.2);
+    }
+
+    @@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+</style>

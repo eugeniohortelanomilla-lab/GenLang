@@ -1,30 +1,139 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">EugeneAPI</a>
+﻿<div class="sidebar">
+    <div class="profile-zone">
+        <div class="pic-ring">
+            @* Ensure profile.jpg is in your wwwroot folder *@
+            <img src="profile.jpg" alt="Eugenio Milla" />
+            <div class="online-glow"></div>
+        </div>
+        <h3 class="user-name">Eugenio Milla</h3>
+        <span class="user-role">IT Analyst & Entrepreneur</span>
+    </div>
+
+    <hr class="nav-divider" />
+
+    <nav class="nav-list">
+        <NavLink class="nav-item" href="" Match="NavLinkMatch.All">
+            <span class="nav-icon">🏠</span> Home
+        </NavLink>
+        
+        <NavLink class="nav-item" href="about">
+            <span class="nav-icon">👤</span> Background
+        </NavLink>
+        
+        <NavLink class="nav-item" href="projects">
+            <span class="nav-icon">💼</span> Exp & Skills
+        </NavLink>
+        
+        <NavLink class="nav-item" href="contact">
+            <span class="nav-icon">📧</span> Contact
+        </NavLink>
+    </nav>
+
+    <div class="sidebar-footer">
+        <div class="specialist-tags">
+            <span class="tag">PHOTO & VIDEO EDITOR</span>
+            <span class="tag">SOCIAL MEDIA MANAGER</span>
+            <span class="tag">VIRTUAL ASSISTANT</span>
+        </div>
     </div>
 </div>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+<style>
+    .sidebar {
+        width: 280px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(25px);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 40px 20px;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+    }
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+    /* PROFILE SECTION */
+    .profile-zone { text-align: center; margin-bottom: 30px; }
+    
+    .pic-ring { 
+        width: 115px; 
+        height: 115px; 
+        border-radius: 50%; 
+        padding: 3px; 
+        background: linear-gradient(45deg, #800020, #ff3c3c); 
+        margin: 0 auto 15px; 
+        position: relative;
+        box-shadow: 0 0 20px rgba(128, 0, 32, 0.4);
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
+    .pic-ring img { 
+        width: 100%; 
+        height: 100%; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        background: #000; 
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    .online-glow { 
+        position: absolute; 
+        bottom: 8px; 
+        right: 8px; 
+        width: 14px; 
+        height: 14px; 
+        background: #00ff00; 
+        border-radius: 50%; 
+        border: 2px solid #1a0505; 
+        box-shadow: 0 0 10px #00ff00;
+        animation: pulseStatus 2s infinite;
+    }
 
+    @@keyframes pulseStatus {
+        0% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.1); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    .user-name { margin: 12px 0 4px; font-size: 1.25rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .user-role { color: #ff3c3c; font-size: 0.75rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+
+    .nav-divider { border: 0; border-top: 1px solid rgba(255,255,255,0.05); margin: 20px 0; }
+
+    /* NAVIGATION LINKS */
+    .nav-list { display: flex; flex-direction: column; gap: 6px; flex-grow: 1; }
+    
+    .nav-item { 
+        display: flex;
+        align-items: center;
+        color: #999; 
+        text-decoration: none; 
+        padding: 14px 18px; 
+        border-radius: 12px; 
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        font-size: 0.9rem; 
+        font-weight: 600;
+    }
+
+    .nav-icon { margin-right: 12px; font-size: 1.1rem; filter: grayscale(1); transition: 0.3s; }
+
+    .nav-item:hover { 
+        color: white; 
+        background: rgba(255, 255, 255, 0.05); 
+        transform: translateX(5px);
+    }
+
+    .nav-item:hover .nav-icon { filter: grayscale(0); }
+
+    .nav-item.active { 
+        color: white; 
+        background: #800020 !important; 
+        box-shadow: 0 4px 20px rgba(128, 0, 32, 0.5); 
+    }
+
+    .nav-item.active .nav-icon { filter: grayscale(0); }
+
+    /* FOOTER LABELS */
+    .sidebar-footer { margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.03); }
+    .specialist-tags { display: flex; flex-direction: column; gap: 6px; opacity: 0.5; }
+    .tag { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 800; color: #fff; }
+</style>
