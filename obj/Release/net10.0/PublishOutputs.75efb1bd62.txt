@@ -1,7 +1,0 @@
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\EugeneAPI.exe
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\appsettings.Development.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\appsettings.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\EugeneAPI.dll
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\EugeneAPI.runtimeconfig.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\EugeneAPI.pdb
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\publish\EugeneAPI.deps.json

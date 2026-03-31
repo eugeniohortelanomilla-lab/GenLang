@@ -1,11 +1,5 @@
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\web.config
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\appsettings.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\appsettings.Development.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\appsettings.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\EugeneAPI.deps.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\EugeneAPI.runtimeconfig.json
-C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\publish\EugeneAPI.staticwebassets.endpoints.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\EugeneAPI.staticwebassets.runtime.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\EugeneAPI.staticwebassets.endpoints.json
 C:\Users\user\OneDrive\Desktop\JAVA\autobig\EugeneAPI\bin\Debug\net10.0\EugeneAPI.exe

@@ -66,14 +66,14 @@
 
     private void CloseSkill()
     {
-        // This is now allowed because of the '?' above, fixing CS8625
+        //this is now allowed because of the '?' above, fixing CS8625
         selectedSkill = null;
         StateHasChanged();
     }
 
     public class SkillItem
     {
-        // Initializing with "" (empty string) fixes CS8618
+        //Initializing with "" (empty string) fixes CS8618
         public string Title { get; set; } = "";
         public string Icon { get; set; } = "";
         public string ShortDesc { get; set; } = "";
@@ -88,8 +88,8 @@
             ShortDesc = "Assistant IT Analyst experience in systems and development.",
             Details = new List<string> {
                 "Assistant IT Analyst: System troubleshooting and data infrastructure.",
-                "Programming: Proficiency in Java, C, and Blazor Framework.",
-                "Development: Building interactive UI components for 'Project MILLA'."
+                "Programming: Proficiency in Java, C, PHP,Python and Blazor Framework."
+        
             }
         },
         new SkillItem { 
